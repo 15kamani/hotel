@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="conteiner2">
+        <h1>Регистрация</h1>
+        <div class="registr_all">
+            <form action="lol/register.php" method="post">
+                <label>Имя:*</label><br>
+                <input type="text" name="name" placeholder="введите ваше имя" required><br>
+                <label>Логин:*</label><br>
+                <input type="text" name="login" placeholder="введите ваш логин" required><br>
+                <label>Email:*</label><br>
+                <input type="email" name="email" placeholder="введите вашу почту" required><br>
+                <label>Телефон:*</label><br>
+                <input type="tel" name="phone" placeholder="введите ваш телефон" required><br>
+                <label>Пароль:*</label><br>
+                <input type="password" name="password" placeholder="придумайте пароль" required><br>
+                <label>Подтверждение пароля:*</label><br>
+                <input type="password" name="confirm_password" placeholder="повторите пароль" required><br>
+                <p> Если у вас уже есть аккаунт, то самое время <a href="index.php">войти</a></p>
+                <div class="vhod">
+                    <input type="submit" value="Зарегистрироваться">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

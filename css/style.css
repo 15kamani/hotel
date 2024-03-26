@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+html{
+    font-family: 'Montserrat', sans-serif;
+    border-color: #E2E1DD;
+}
+body{
+    text-align: center;
+}
+.conteiner{
+    background-color: #D5B294;
+    padding: 1%;
+    width: 528px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 15%;
+    margin-left: 34%;
+    margin-right: 20%;
+}
+.registr{
+    margin-top: 3%;
+}
+.registr input{
+    margin-top: 1.5%;
+    width: 347px;
+    height: 49px;
+    background-color: #D9D9D9;
+    color: #89919C;
+    border-radius: 40px;
+    border: none;
+    font-size: 14pt;
+    align-items: center;
+    padding-left: 3%;
+}
+.registr p{
+    font-size: 10pt;
+    margin-top: 0;
+}
+
+.registr_all label{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 2%;
+}
+.registr_all input{
+    width: 347px;
+    height: 49px;
+    background-color: #D9D9D9;
+    color: #89919C;
+    border-radius: 40px;
+    border: none;
+    font-size: 14pt;
+    align-items: center;
+    padding-left: 3%;
+}
+.registr_all p{
+    font-size: 10pt;
+    margin-top: 0;
+}
+.conteiner2{
+    background-color: #D5B294;
+    padding: 1%;
+    width: 528px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 2.5%;
+    margin-left: 34%;
+    margin-right: 20%;
+}
+
+.vhod input{
+    background-color: #B15E28;
+    color: #fff;
+    font-weight: bold;
+}
+.vhod input:hover{
+    cursor: pointer;
+    border: 2px solid white;
+}

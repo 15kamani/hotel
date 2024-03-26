@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <section class="header">
+
+        <div class="flex">
+           <a href="#home" class="logo">
+              <img src="img/oasis.png" alt="">
+              Мини-отель "Солнечный оазис"
+           </a>
+           <a href="index.html" class="btn">Выход</a>
+           <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+     
+        <nav class="navbar">
+           <a href="#">Главная</a>
+           <a href="360-room/index.html">Виртуальная экскурсия</a>
+           <a href="#contact">Контакты</a>
+           <a href="booking.html">Бронирование</a>
+        </nav>
+     
+     </section>
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="img/11.png" alt="">
+            <div class="flex">
+               <h3>Лучшие номера</h3>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="img/6.png" alt="">
+            <div class="flex">
+               <h3>Вкусная еда и освежающие напитки</h3>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="img/29.png" alt="">
+            <div class="flex">
+               <h3>Комфортное размещение</h3>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- services section starts  -->
+
+<section class="services">
+   <div class="box-container">
+      <div class="box">
+         <img src="img/food_drink.png" alt="">
+         <h3>Еда и напитки</h3>
+         <p>Мы предоставляем не только комфортное место для сна, но и изысканную кухню</p>
+      </div>
+
+      <div class="box">
+         <img src="img/hotel.png" alt="">
+         <h3>Роскошный отдых</h3>
+         <p>Вы можете заселиться в любой номер, а в окно увидите не только улицу, но и внутренний двор с вечноцветущей сакурой</p>
+      </div>
+
+      <div class="box">
+         <img src="img/bell.png" alt="">
+         <h3>Приятный персонал</h3>
+         <p>Любая ваша просьба и каприз будет исполнена профессионалами своего дела</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- reservation section starts  -->
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>Забронировать номер</h3>
+      <div class="flex">
+         <div class="box">
+            <p>Имя: <span>*</span></p>
+            <input type="text" name="name" maxlength="50" required placeholder="введите своё имя" class="input">
+         </div>
+         <div class="box">
+            <p>Почта: <span>*</span></p>
+            <input type="email" name="email" maxlength="50" required placeholder="введите свой email" class="input">
+         </div>
+         <div class="box">
+            <p>Телефон: <span>*</span></p>
+            <input type="number" name="number" maxlength="10" min="0" max="9999999999" required placeholder="введите номер телефона" class="input">
+         </div>
+         <div class="box">
+            <p>Количество комнат: <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1" selected>1 комната</option>
+               <option value="2">2 комнаты</option>
+               <option value="3">3 комнаты</option>
+               <option value="4">4 комнаты</option>
+               <option value="5">5 комнат</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Заселение: <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Выселение: <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Количество взрослых: <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1" selected>1 человек</option>
+               <option value="2">2 человека</option>
+               <option value="3">3 человека</option>
+               <option value="4">4 человека</option>
+               <option value="5">5 человек</option>
+               <option value="6">6 человек</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Количество детей: <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="0" selected>---</option>
+               <option value="1">1 ребёнок</option>
+               <option value="2">2 ребёнка</option>
+               <option value="3">3 ребёнка</option>
+               <option value="4">4 ребёнка</option>
+               <option value="5">5 детей</option>
+               <option value="6">6 детей</option>
+            </select>
+         </div>
+      </div>
+      <p>Поля помеченные * обязательнны для заполнения</p>
+      <input type="submit" value="Забронировать" name="book" class="btn">
+   </form>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="img/swiper/1.jpg" class="swiper-slide" alt="">
+         <img src="img/swiper/15.png" class="swiper-slide" alt="">
+         <img src="img/swiper/24.png" class="swiper-slide" alt="">
+         <img src="img/swiper/4.png" class="swiper-slide" alt="">
+         <img src="img/swiper/19.png" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<section class="contact" id="contact">
+   <div class="row">
+      <form action="" method="post">
+         <h3>Остались вопросы? Спрашивайте:</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="введите своё имя" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="введите свою почту" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="введите свой номер" class="box">
+         <textarea name="message" class="box" required maxlength="1000" placeholder="Что вас интересует?" cols="30" rows="10"></textarea>
+         <input type="submit" value="Отправить сообщение!" name="send" class="btn">
+      </form>
+   </div>
+</section>
+
+<section class="reviews" id="reviews">
+
+   <div class="swiper reviews-slider">
+   <h3 class="otzivi">Отзывы наших клиентов:</h3>
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="img/alina.jpg" alt="">
+            <h3>Алина Каманина</h3>
+            <p>Являюсь постоянным клиентов в этом отеле, очень приятно видеть как с каждым годом он становится всё лучше и лучше.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="img/jk.jpg" alt="">
+            <h3>Чон Чонгук</h3>
+            <p>Прекрасное место для проведения Vlive и общения с ARMY.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="img/mrhamster.png" alt="">
+            <h3>Мистер Хомяк</h3>
+            <p>Еда прекрасна, размещение чудестное, больше всего понравилась комнта на втором этаже, выглядит как самый милый кабинет в моей хомячьей жизни.</p>
+         </div>
+   </div>
+
+</section>
+
+<section class="footer">
+   <div class="polosa"></div>
+      <div class="box-container">
+         <div class="box">
+            <a href="tel:1112223333"><i class="fas fa-phone"></i> +7(911)-542-6825</a>
+            <a href="mailto:shakhanas@gmail.com"><i class="fas fa-envelope"></i> alinkakamanina@gmail.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>г. Вологда, Первомайская, 40</a>
+         </div>
+   
+         <div class="box">
+            <a href="#">Виртуальная экскурсия</a>
+            <a href="main.php#contact">Контакты</a>
+            <a href="bookings.php">Бронирование</a>
+         </div>
+   
+         <div class="box">
+            <a href="#">VKontakte <i class="fab fa-facebook-f"></i></a>
+            <a href="#">telegram <i class="fab fa-instagram"></i></a>
+            <a href="#">youtube <i class="fab fa-youtube"></i></a>
+         </div>
+   
+      </div>
+   
+      <div class="credit">2024|sun_rise3001</div>
+   
+   </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+</body>
+</html>
